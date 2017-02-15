@@ -20,6 +20,7 @@ class UnionFind{
             id[i] = id[id[i]];
             i= id[i];
         }
+        return i;
     }
 
     public boolean connected(int p , int q){
