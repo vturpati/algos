@@ -37,6 +37,11 @@ class UnionFind{
             id[pid] = qid;
             s[qid] += s[pid]; 
         }
+        n--;
+    }
+
+    public int size(){
+        return n;
     }
     
     /*
