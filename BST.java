@@ -94,4 +94,14 @@ class BST<Key extends Comparable<Key> , Value > {
 
         return x;
     }
+
+    public static void main(String[] args) { 
+        BST<Integer, Integer> st = new BST<Integer, Integer>();
+        for (int i = 0; i < 10; i++) {
+            st.put(i, i);
+        }
+        System.out.println("value of 9 "+st.get(9));
+    
+    }
+
 }
