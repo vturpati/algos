@@ -11,7 +11,7 @@ class BST<Key extends Comparable<Key> , Value > {
         public  Node(Key key, Value value) {
             this.key = key;
             this.value = value;
-            count = 0;
+            count = 1;
         }
     }
 
@@ -97,10 +97,10 @@ class BST<Key extends Comparable<Key> , Value > {
 
     public static void main(String[] args) { 
         BST<Integer, Integer> st = new BST<Integer, Integer>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10000; i++) {
             st.put(i, i);
         }
-        System.out.println("value of 9 "+st.get(9));
+        System.out.println("value of 9 "+st.get(789));
     
     }
 
